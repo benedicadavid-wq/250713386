@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Registrasi Mahasiswa Baru</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulir Pendaftaran Calon Mahasiswa Baru</h1>
+        <p class="subtitle">Silakan isi formulir di bawah ini dengan data diri yang valid dan lengkap.</p>
+        
+        <form action="" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Informasi Pribadi &amp; Akademik</legend>
+                
+                <div class="form-group">
+                    <label for="namamhs">Nama Lengkap Mahasiswa</label>
+                    <input type="text" id="namamhs" name="namamhs" size="30" placeholder="Masukkan nama lengkap..." />
+                </div>
+
+                <div class="form-group">
+                    <label>Jenis Kelamin</label>
+                    <div class="radio-group">
+                        <input type="radio" id="laki" name="jk" value="laki-laki" />
+                        <label for="laki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="jk" value="Perempuan" />
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="prodi">Program Studi Pilihan</label>
+                    <select id="prodi" name="prodi">
+                        <option value="">-- Pilih Program Studi --</option>
+                        <option>Informatika</option>
+                        <option>Sistem Informasi</option>
+                        <option>Teknik Industri</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Alamat Email Aktif</label>
+                    <input type="text" id="email" name="email" size="30" placeholder="contoh@email.com" />
+                </div>
+
+                <div class="form-group">
+                    <label for="telepon">Nomor Telepon / WhatsApp</label>
+                    <input type="text" id="telepon" name="telepon" size="30" placeholder="08xxxxxxxxxx" />
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Kata Sandi Akun</label>
+                    <input type="password" id="password" name="password" size="30" placeholder="Minimal 6 karakter" />
+                </div>
+
+                <div class="form-group">
+                    <label for="photo">Unggah Pas Foto Terbaru</label>
+                    <input type="file" id="photo" name="photo" accept="image/gif, image/jpeg, image/png" />
+                </div>
+
+                <div class="form-group">
+                    <label for="namasmu">Nama Sekolah Asal (SMA/SMK)</label>
+                    <input type="text" id="namasmu" name="namasmu" size="30" placeholder="Nama sekolah asal..." />
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Minat &amp; Kualifikasi Tambahan</legend>
+                
+                <div class="form-group">
+                    <label><strong>Genre Musik Favorit</strong></label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="musik1" name="musik" value="Pop" />
+                        <label for="musik1">Pop</label>
+                        <input type="checkbox" id="musik2" name="musik" value="Rock" />
+                        <label for="musik2">Rock</label>
+                        <input type="checkbox" id="musik3" name="musik" value="Jazz" />
+                        <label for="musik3">Jazz</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><strong>Genre Film Favorit</strong></label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="film1" name="film" value="Drama" />
+                        <label for="film1">Drama</label>
+                        <input type="checkbox" id="film2" name="film" value="Action" />
+                        <label for="film2">Action</label>
+                        <input type="checkbox" id="film3" name="film" value="Sci-Fi" />
+                        <label for="film3">Sci-Fi</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="resume">Ringkasan Diri / Resume Singkat</label>
+                    <textarea id="resume" name="resume" rows="5" cols="30" placeholder="Ceritakan sedikit tentang latar belakang Anda..."></textarea>
+                </div>
+            </fieldset>
+
+            <div class="form-actions">
+                <input type="submit" name="simpan" value="Simpan Pendaftaran" class="btn-submit" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

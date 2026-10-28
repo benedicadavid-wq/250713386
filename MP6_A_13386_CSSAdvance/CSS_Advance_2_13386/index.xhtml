@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Pendaftaran Seminar Teknologi</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Formulir Pendaftaran Seminar Teknologi</h1>
+        <p class="subtitle">Silakan lengkapi data diri dan pilih sesi seminar yang ingin Anda ikuti.</p>
+
+        <form action="" method="post" enctype="multipart/form-data">
+
+            <fieldset>
+                <legend>Identitas Peserta Seminar</legend>
+                
+                <div class="form-group">
+                    <label for="namaLengkap">Nama Lengkap Peserta</label>
+                    <input type="text" id="namaLengkap" name="namaLengkap" size="30" placeholder="Nama lengkap peserta..." />
+                </div>
+
+                <div class="form-group">
+                    <label for="nim">Nomor Induk Mahasiswa (NIM)</label>
+                    <input type="text" id="nim" name="nim" size="30" placeholder="Masukkan NIM..." />
+                </div>
+
+                <div class="form-group">
+                    <label>Jenis Kelamin</label>
+                    <div class="radio-group">
+                        <input type="radio" id="laki" name="jenisKelamin" value="Laki-laki" />
+                        <label for="laki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan" />
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="programStudi">Program Studi</label>
+                    <select id="programStudi" name="programStudi">
+                        <option value="">-- Pilih Program Studi --</option>
+                        <option>Informatika</option>
+                        <option>Sistem Informasi</option>
+                        <option>Teknik Industri</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pilihan Sesi &amp; Kategori Tiket</legend>
+                
+                <div class="form-group">
+                    <label>Kategori Jenis Tiket</label>
+                    <div class="radio-group">
+                        <input type="radio" id="reguler" name="jenisTiket" value="Reguler" />
+                        <label for="reguler">Reguler</label>
+                        <input type="radio" id="vip" name="jenisTiket" value="VIP" />
+                        <label for="vip">VIP (Fasilitas Eksklusif)</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Topik Seminar Pilihan</label>
+                    <div class="checkbox-column">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="topik1" name="topikSeminar" value="Web Development" />
+                            <label for="topik1">Web Development</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="topik2" name="topikSeminar" value="Data Science" />
+                            <label for="topik2">Data Science</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="topik3" name="topikSeminar" value="Artificial Intelligence" />
+                            <label for="topik3">Artificial Intelligence</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Motivasi &amp; Verifikasi Pembayaran</legend>
+                
+                <div class="form-group">
+                    <label for="alasan">Motivasi Mengikuti Seminar</label>
+                    <textarea id="alasan" name="alasan" rows="5" cols="35" placeholder="Tuliskan alasan atau harapan Anda mengikuti seminar ini..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="buktiPembayaran">Unggah Bukti Pembayaran</label>
+                    <input type="file" id="buktiPembayaran" name="buktiPembayaran" accept="image/*, application/pdf" />
+                </div>
+            </fieldset>
+
+            <div class="form-actions">
+                <input type="submit" name="simpan" value="Kirim Pendaftaran" class="btn-submit" />
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
